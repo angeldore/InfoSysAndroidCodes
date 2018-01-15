@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // to view is the onCreate function called properly or not
+        Toast.makeText(this, "OnCreate function called", Toast.LENGTH_LONG).show();
 
 
         Name = (EditText)findViewById(R.id.etName);
@@ -40,6 +44,47 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        // to check whether this function called or not
+        Toast.makeText(this, "onStart function called", Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        // to check whether this function called or not
+        Toast.makeText(this, "onResume function called", Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        // to check whether this function called or not
+        Toast.makeText(this, "onPause function called", Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        // to check whether this function called or not
+        Toast.makeText(this, "onStop function called", Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        // to check whether this function called or not
+        Toast.makeText(this, "onDestroy function called", Toast.LENGTH_LONG).show();
+    }
+
+    public void onBackPressed() {
+        super.onBackPressed();
+        // to check whether this function called or not
+        Toast.makeText(this, "onBackPressed function called", Toast.LENGTH_LONG).show();
+    }
+
     public void closeApp(View v)
     {
         moveTaskToBack(true);
@@ -51,8 +96,13 @@ public class MainActivity extends AppCompatActivity {
     {
         if((userName.equals("123")) && (userPassword.equals("123"))){
 
+            // this is the taost which will conmonly use by developer to show the message
+
+            Toast.makeText(this, "successfully login!", Toast.LENGTH_LONG).show();
+
             Intent intent = new Intent(MainActivity.this, SecondActivity.class);
             startActivity(intent);
+
         }
 
         else

@@ -9,6 +9,25 @@
 
     <ListView
         android:id="@+id/lst_viewflw"
+        android:layout_width="wrap_content"
+        android:layout_height="124dp"
+        android:layout_gravity="top|start"
+        android:background="@android:color/darker_gray"
+        android:divider="@color/colorPrimaryDark"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true" />
+
+    <ListView
+        android:id="@+id/lst_viewcty"
+        android:layout_width="wrap_content"
+        android:layout_height="203dp"
+        android:layout_gravity="top|start"
+        android:background="@android:color/background_light"
+        android:visibility="invisible" />
+
+    <Spinner
+        android:id="@+id/elst_flowers"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content" />
+
 </LinearLayout>

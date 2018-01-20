@@ -1,0 +1,6 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end #parse("File Header.java") public class ${NAME} { } 
+
+
+Paste the above code in Go to File->setting->editor->file and code templates, select Class in the files tab and write this
+
+if class did not created in java.

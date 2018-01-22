@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lnr_layoutouter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context="com.jahangiri.alquranaudio.MainActivity">
+
+    <ListView
+        android:id="@+id/lst_vu_para"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="@color/colorPrimaryDark"
+
+
+        ></ListView>
+
+    <LinearLayout
+        android:id="@+id/lnr_layoutinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+
+
+        <ImageView
+            android:id="@+id/img_vu_quran_main"
+            android:layout_width="275dp"
+            android:layout_height="275dp"
+            android:layout_gravity="center_horizontal|center"
+            android:contentDescription="@string/audio_quran"
+            app:srcCompat="@drawable/quranaudio" />
+
+
+        <TextView
+            android:id="@+id/txt_vu_trans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center"
+            android:paddingTop="10dp"
+            android:text="Translation"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="16sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/txt_vu_mufti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center"
+            android:paddingTop="10dp"
+            android:text="Mufti Taqi Usmani"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="?attr/colorPrimary"
+            android:text="Get Start"
+            android:textColor="@android:color/holo_orange_light"
+            android:textColorLink="@android:color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -39,7 +39,7 @@
 
 
                 <ImageView
-                    android:id="@+id/imageView"
+                    android:id="@+id/img_vu_main"
                     android:layout_width="144dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center"
@@ -97,6 +97,17 @@
                     android:layout_marginTop="5dp"
                     android:gravity="center"
                     android:text="Make New Account"
+                    android:textColor="@color/cashcobracolor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_vu_IP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="Server Address"
                     android:textColor="@color/cashcobracolor"
                     android:textSize="20sp"
                     android:textStyle="bold" />
